@@ -240,8 +240,8 @@ export default {
           .add(2, "hour")
           .toString()
       ],
-      rowNum: 100,
-      colNum: 10,
+      rowNum: 40,
+      colNum: 5,
       datasA: [],
       datasB: [],
       dataKey: "id",
@@ -251,7 +251,7 @@ export default {
         .toString(),
       scrollToPostion: { x: 10000, y: 10000 },
       hideHeader: false,
-      hideSecondGantt: false,
+      hideSecondGantt: true,
       arrayKeys: ["gtArray", "error"],
       scrollToY: 0,
       positionB: {},

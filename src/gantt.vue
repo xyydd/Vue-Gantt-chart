@@ -164,12 +164,12 @@
       class="gantt-scroll-y"
       :style="{
         width: `${scrollYBarWidth}px`,
-        height: `calc(100% - ${actualHeaderHeight}px`,
+        height: `calc(100% - ${actualHeaderHeight}px)`,
         marginTop: `${actualHeaderHeight}px`
       }"
       @scroll.passive="syncScrollY"
     >
-      <div :style="{ height: totalHeight + 'px' }"></div>
+      <div :style="{ height: totalHeight + 20 + 'px' }"></div>
     </div>
 
     <div
@@ -466,7 +466,7 @@ export default {
     const observeContainer = throttle((entries) => {
       entries.forEach((entry) => {
         const cr = entry.contentRect;
-        this.heightOfBlocksWrapper = cr.height;
+        this.heightOfBlocksWrapper = cr.height - 20;
         this.widthOfBlocksWrapper = cr.width;
       });
     });
@@ -636,6 +636,7 @@ export default {
       const { gantt_leftbar, gantt_table } = this.selector;
       const topValue = event.target.scrollTop;
       this.scrollTop = gantt_table.scrollTop = gantt_leftbar.scrollTop = topValue;
+      // console.log(topValue);
       this.$emit("scrollTop", topValue);
     },
     syncScrollX(event) {
