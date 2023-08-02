@@ -169,7 +169,7 @@
       }"
       @scroll.passive="syncScrollY"
     >
-      <div :style="{ height: totalHeight + 20 + 'px' }"></div>
+      <div :style="{ height: totalHeight + 'px' }"></div>
     </div>
 
     <div
@@ -384,7 +384,7 @@ export default {
     },
     totalHeight() {
       const { datas, cellHeight } = this;
-      return datas.length * cellHeight;
+      return datas.length * cellHeight + 20;
     },
     beginTimeOfTimeLine() {
       const value = getBeginTimeOfTimeLine(this.start, this.scale);
@@ -636,7 +636,6 @@ export default {
       const { gantt_leftbar, gantt_table } = this.selector;
       const topValue = event.target.scrollTop;
       this.scrollTop = gantt_table.scrollTop = gantt_leftbar.scrollTop = topValue;
-      // console.log(topValue);
       this.$emit("scrollTop", topValue);
     },
     syncScrollX(event) {
