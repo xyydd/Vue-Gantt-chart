@@ -36,7 +36,7 @@ const dynamicRender = {
   computed: {
     blockHeight() {
       const { datas, cellHeight } = this;
-      return datas.length * cellHeight;
+      return datas.length * cellHeight + 37;
     },
     //计算当前屏幕显示的第一行数据的index
     currentTopIndex() {
