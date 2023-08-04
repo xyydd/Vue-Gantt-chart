@@ -39,6 +39,7 @@
     ]
   },
   "dependencies": {
+    "ant-design-vue": "^1.7.8",
     "core-js": "^3.4.3",
     "dayjs": "^1.8.17",
     "lint-staged": "^10.2.11",
@@ -59,6 +60,8 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
     "mockjs": "^1.1.0",
     "prettier": "^1.19.1",
     "sass": "^1.23.7",

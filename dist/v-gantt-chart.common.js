@@ -3922,8 +3922,8 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"48f18a78-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/gantt.vue?vue&type=template&id=04fd614c&
-var ganttvue_type_template_id_04fd614c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"gantt-chart",on:{"&wheel":function($event){return _vm.wheelHandle($event)},"&touchstart":function($event){return _vm.touchStartHandle($event)},"&touchmove":function($event){return _vm.touchMoveHandle($event)},"&touchend":function($event){return _vm.touchEndHandle($event)}}},[_c('div',{staticClass:"gantt-container",style:({
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"48f18a78-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/gantt.vue?vue&type=template&id=39444350&
+var ganttvue_type_template_id_39444350_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"gantt-chart",on:{"&wheel":function($event){return _vm.wheelHandle($event)},"&touchstart":function($event){return _vm.touchStartHandle($event)},"&touchmove":function($event){return _vm.touchMoveHandle($event)},"&touchend":function($event){return _vm.touchEndHandle($event)}}},[_c('div',{staticClass:"gantt-container",style:({
       height: ("calc(100% - " + _vm.scrollXBarHeight + "px)"),
       width: ("calc(100% - " + _vm.scrollYBarWidth + "px)")
     })},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(!_vm.hideHeader),expression:"!hideHeader"}],staticClass:"gantt-header",style:({ width: ("calc(100% + " + _vm.scrollYBarWidth + "px)") })},[_c('div',{staticClass:"gantt-header-title",style:({
@@ -3954,7 +3954,7 @@ return [_vm._t("block",null,{"data":data,"getPositonOffset":getPositonOffset,"ge
       width: (_vm.scrollYBarWidth + "px"),
       height: ("calc(100% - " + _vm.actualHeaderHeight + "px)"),
       marginTop: (_vm.actualHeaderHeight + "px")
-    }),on:{"&scroll":function($event){return _vm.syncScrollY($event)}}},[_c('div',{style:({ height: _vm.totalHeight + 20 + 'px' })})]),_c('div',{ref:"scrollXBar",staticClass:"gantt-scroll-x",style:({
+    }),on:{"&scroll":function($event){return _vm.syncScrollY($event)}}},[_c('div',{style:({ height: _vm.totalHeight + 'px' })})]),_c('div',{ref:"scrollXBar",staticClass:"gantt-scroll-x",style:({
       height: (_vm.scrollXBarHeight + "px"),
       width: ("calc(100% - " + _vm.titleWidth + "px )"),
       marginLeft: _vm.titleWidth + 'px'
@@ -3962,7 +3962,7 @@ return [_vm._t("block",null,{"data":data,"getPositonOffset":getPositonOffset,"ge
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/gantt.vue?vue&type=template&id=04fd614c&
+// CONCATENATED MODULE: ./src/gantt.vue?vue&type=template&id=39444350&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
@@ -5643,7 +5643,7 @@ var blocks_component = normalizeComponent(
     totalHeight: function totalHeight() {
       var datas = this.datas,
           cellHeight = this.cellHeight;
-      return datas.length * cellHeight;
+      return datas.length * cellHeight + 20;
     },
     beginTimeOfTimeLine: function beginTimeOfTimeLine() {
       var value = getBeginTimeOfTimeLine(this.start, this.scale);
@@ -5926,7 +5926,7 @@ var ganttvue_type_style_index_0_lang_scss_ = __webpack_require__("c3ab");
 
 var gantt_component = normalizeComponent(
   src_ganttvue_type_script_lang_js_,
-  ganttvue_type_template_id_04fd614c_render,
+  ganttvue_type_template_id_39444350_render,
   staticRenderFns,
   false,
   null,

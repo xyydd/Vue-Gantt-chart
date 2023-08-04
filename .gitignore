@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 tests/unit/converage
+src/assets/*
+src/Gantt/*
 
 # /dist
 
